@@ -1,0 +1,138 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height: 700px;
+  margin: auto;
+  background: #fff;
+  box-shadow: 0 0 10px grey;
+  padding: 20px 0;
+  border-radius: 10px;
+  overflow-y: scroll;
+}
+
+.container {
+  max-width: 450px;
+  margin: auto;
+  /* background: green; */
+  padding: 0 20px;
+}
+
+.container h2 {
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 3px;
+  font-size: 30px;
+  color: blue;
+  font-weight: bold;
+}
+
+.container .input_group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.container .input_group #text_input_field {
+  padding: 10px;
+  width: 100%;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  background: rgb(0, 170, 255);
+  color: #fff;
+  border: 4px solid rgb(0, 170, 255);
+}
+
+.container .input_group #text_input_field:focus {
+  border: 4px solid rgb(0, 170, 255);
+  background: none;
+  color: blue;
+}
+
+#add_button {
+  height: 50px;
+  width: 60px;
+  border: 4px solid rgb(0, 170, 255);
+  margin-left: 10px;
+  border-radius: 3px;
+  text-align: center;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+
+#add_button:hover {
+  background: rgb(4, 255, 4);
+}
+
+#todos_container {
+  display: flex;
+  flex-direction: column;
+}
+
+#todos_container div {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 3px solid rgb(0, 170, 255);
+  border-radius: 3px;
+  height: 50px;
+  text-align: center;
+  margin-bottom: 10px;
+  padding-left: 5px;
+}
+
+/* 4444 */
+.todo_item_container {
+  display: flex;
+  align-items: center;
+  line-height: 45px;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+#todo_text {
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: grey;
+}
+
+/* .container #todos_container .todo_item_container .btn {
+  display: flex;
+  align-items: center;
+} */
+
+button {
+  height: 40px;
+  width: 40px;
+  margin: 0 10px;
+  border: 4px solid rgb(0, 170, 255);
+  background: transparent;
+  cursor: pointer;
+}
+
+#edit_button:hover {
+  background: greenyellow;
+}
+
+#delete_button:hover {
+  background: red;
+}
+
+.line_through {
+  text-decoration: line-through;
+  color: blue;
+  
+}
